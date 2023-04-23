@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Encriptador de texto scorpius</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+	<header>
+		<img src="peep_human_person_avatar_icon_192316.png" alt="Logo">
+	</header>
+
+	<main class="container wrapper">
+		<div class="col-6">
+			<textarea id="texto" placeholder="Ingresa el texto a encriptar o desencriptar"></textarea>
+			<div class="botones">
+				<p><i class="fas fa-exclamation-triangle"></i>Apenas letras minúsculas y sin acento.</p>
+				<button id="btnEncriptar" class="text-center">Encriptar</button>
+				<button id="btnDesencriptar" class="text-center">Desencriptar</button>
+			</div>
+		</div>
+
+		<section class="section"></section>
+
+		<div class="col-6" id="imagenes">
+			<img src="eye256x256_114396.png" class="muñeco" alt="Imagen 1">
+		</div>
+
+		<div class="col-12" id="textoEncriptadoContainer">
+			<textarea id="textoEncriptado" placeholder="Texto encriptado o desencriptado"
+				style="display: none;"></textarea>
+			<button onclick="copiarTexto()" id="btnCopiar" class="text-center" style="display: none;">Copiar</button>
+		</div>
+
+	</main>
+	<footer>
+		<p>todos los derechos reservados Jader cossio bello</p>
+	</footer>
+	<script src="code.js"></script>
+</body>
+
+</html>
